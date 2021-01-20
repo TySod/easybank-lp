@@ -49,7 +49,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
-  padding: 1rem 1.875rem;
+  padding: .875rem 1.1875rem;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border-radius: 50px;
@@ -75,6 +75,11 @@ button, .button {
   padding: 22px;
 }
 
+.header__logo img {
+  width: 8.8125rem;
+  height: 1.375rem;
+}
+
 .header__menu > span {
   display: block;
   width: 26px;
@@ -88,5 +93,21 @@ button, .button {
 
 .header__links a {
   font-size: 0.875rem;
+  color: #9698a6;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  height: 100%;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__links a:hover {
+  color: #2d314d;
+}
+
+.header__links a:active {
+  border-bottom: 2px #31d35c solid;
 }
 /*# sourceMappingURL=style.css.map */
